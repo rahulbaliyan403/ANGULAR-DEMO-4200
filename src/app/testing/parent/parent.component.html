@@ -1,0 +1,6 @@
+<div>
+  Parent Component
+  <p>Message from child: {{ messageFromChild }}</p>
+  <app-child [Pdata3]="product" (msgToParent)="handleMessageFromChild($event)">
+  </app-child>
+</div>

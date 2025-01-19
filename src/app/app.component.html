@@ -1,2 +1,23 @@
-<h1>{{title}}</h1>
+<!-- <div *ngFor="let user of users; let i =index">
+  <h1>{{i}} {{user.name}}</h1>
+</div> -->
+<!-- <app-parent></app-parent> -->
+
+<input type="text" #refdata>
+<button (click)="inputClick(refdata)">Button1</button><br>&nbsp
+
+<input type="checkbox" [value]="checkValue" #checkRef>
+<button (click)="checkClick(checkRef)">Button2</button><br>
+
+<input type="radio" value="gender" #radioRef>
+<button (click)="radioClick(radioRef)">Button2</button><br>
+
+<select #selectRef>
+  <option value="">Select Value</option>
+  <option value="angular">Angular</option>
+  <option value="java">Java</option>
+  <option value="react">React</option>
+</select>
+<button (click)="selectClick(selectRef)">Button2</button><br>
+
 <router-outlet />
